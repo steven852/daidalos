@@ -24,12 +24,14 @@ public class StableVersionTracker extends VersionTracker {
 	
 	public void rollBack() {
 		try {
-			FileLoader loader = new FileLoader(titles.get(0));
+			FileLoader loader = new FileLoader(titles.get(titles.size()-1));
 			super.currentContent = loader.loadFile();
-			titles.remove(0);
+			titles.remove(titles.size()-1);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (IndexOutOfBoundsException a) {
+			System.out.println("No items in memory.");
 		}
 	}
 	

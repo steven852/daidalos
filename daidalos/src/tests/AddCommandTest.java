@@ -3,6 +3,7 @@ package tests;
 import static org.junit.Assert.*;
 
 import org.junit.*;
+import org.junit.jupiter.api.Test;
 
 import commands.DivisionTypeCommands;
 import commands.FigureTypeCommands;

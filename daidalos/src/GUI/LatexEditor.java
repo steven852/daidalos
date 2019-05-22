@@ -269,7 +269,7 @@ public  class LatexEditor extends JFrame implements ActionListener,KeyListener {
 					versionTracker.rollBack();
 					currentContent = versionTracker.getCurrentContent();
 					previousContent = versionTracker.getPreviousContent();
-					textarea.setText(versionTracker.getPreviousContent());
+					textarea.setText(currentContent);
 				}
 				else {
 					System.out.println("No version tracker selected");

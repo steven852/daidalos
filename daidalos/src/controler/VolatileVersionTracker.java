@@ -15,8 +15,12 @@ public class VolatileVersionTracker extends VersionTracker {
 	}
 
 	public void rollBack() {
-		super.currentContent = temporaryContents.get(0);
-		temporaryContents.remove(0);
+		try {
+			super.currentContent = temporaryContents.get(temporaryContents.size()-1);
+			temporaryContents.remove(temporaryContents.size()-1);
+		} catch (IndexOutOfBoundsException a) {
+			System.out.println("No items in memory.");
+		}
 	}
 
 }
