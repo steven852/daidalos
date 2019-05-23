@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <package id="1" language="java" name="commands" project="daidalos" file="/daidalos/src/commands" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="507" y="303"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="2" language="java" name="tests" project="daidalos" file="/daidalos/src/tests" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="369" y="298"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="3" language="java" name="controler" project="daidalos" file="/daidalos/src/controler" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="507" y="200"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="4" language="java" name="templates" project="daidalos" file="/daidalos/src/templates" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="507" y="252"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <package id="5" language="java" name="GUI" project="daidalos" file="/daidalos/src/GUI" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="242" y="263"/>    
+    <display autosize="true" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <dependency id="7">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <dependency id="8">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <dependency id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="3"/>  
+  </dependency>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
